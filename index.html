@@ -1,0 +1,1235 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Nhà May Đức Tâm</title>
+<meta name="description" content="Nhà May Đức Tâm — may đo vest nam, áo dài, đầm dạ hội và đồng phục theo số đo riêng. Thử đồ 2 lần, giao trong 7–14 ngày.">
+
+<!-- Hình thu nhỏ khi gửi link qua Zalo / Facebook / Messenger -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Nhà May Đức Tâm">
+<meta property="og:title" content="Nhà May Đức Tâm — May đo vest, áo dài, đồng phục">
+<meta property="og:description" content="Cắt may theo số đo riêng. Thử đồ 2 lần miễn phí, giao trong 7–14 ngày. Đặt may online, tiệm gọi lại trong 2 giờ.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#161A24">
+
+<!-- Biểu tượng nhỏ trên tab trình duyệt -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23161A24'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='19' font-weight='700' fill='%23C08B4E' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@600;700&display=swap">
+
+<style>
+/* Bố cục: dải băng ngang toàn chiều rộng, nội dung canh trong khung 1120px;
+   vạch thước dây làm đường phân cách giữa các phần. */
+:root{
+  --paper:#F2F3F7;
+  --surface:#FFFFFF;
+  --surface-2:#E8EAF1;
+  --ink:#13161E;
+  --ink-soft:#5B6174;
+  --line:#D4D8E3;
+  --accent:#A3703A;
+  --accent-soft:#F2E6D7;
+  --chalk:#3B5B8C;
+  --ok:#2C7A58;
+  --hero-bg:#161A24;
+  --hero-fg:#F2F3F7;
+  --hero-soft:#A7AFC2;
+
+  --f-display:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --f-body:"Be Vietnam Pro","Segoe UI",system-ui,-apple-system,sans-serif;
+
+  --r:10px;
+  --wrap:1120px;
+  --gut-l:max(16px,env(safe-area-inset-left,0px));
+  --gut-r:max(16px,env(safe-area-inset-right,0px));
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0E1017;
+    --surface:#161A23;
+    --surface-2:#1E222E;
+    --ink:#ECEEF4;
+    --ink-soft:#99A1B4;
+    --line:#2B3040;
+    --accent:#D3A26C;
+    --accent-soft:#2A2117;
+    --chalk:#8EAAD2;
+    --ok:#5CBE92;
+    --hero-bg:#191D28;
+    --hero-fg:#ECEEF4;
+    --hero-soft:#99A1B4;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0E1017;
+  --surface:#161A23;
+  --surface-2:#1E222E;
+  --ink:#ECEEF4;
+  --ink-soft:#99A1B4;
+  --line:#2B3040;
+  --accent:#D3A26C;
+  --accent-soft:#2A2117;
+  --chalk:#8EAAD2;
+  --ok:#5CBE92;
+  --hero-bg:#191D28;
+  --hero-fg:#ECEEF4;
+  --hero-soft:#99A1B4;
+  color-scheme:dark;
+}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--f-body);
+  font-size:16px;
+  line-height:1.65;
+  font-weight:400;
+  -webkit-font-smoothing:antialiased;
+}
+body::before{
+  content:"";position:fixed;inset:0 0 auto;
+  height:env(safe-area-inset-top,0px);z-index:40;background:var(--surface);
+}
+h1,h2,h3{margin:0;text-wrap:balance;line-height:1.15}
+p{margin:0}
+a{color:inherit}
+img,svg{max-width:100%}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:var(--gut-l);padding-right:var(--gut-r)}
+.band{padding-block:clamp(48px,7vw,86px)}
+.eyebrow{
+  font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:14px;display:block;
+}
+.h-sec{font-family:var(--f-display);font-weight:600;font-size:clamp(30px,4.4vw,46px);letter-spacing:-.01em}
+.lede{color:var(--ink-soft);max-width:60ch;margin-top:12px;font-size:16.5px}
+
+/* ---- vạch thước dây ---- */
+.ruler{
+  height:15px;
+  background-image:
+    repeating-linear-gradient(90deg,var(--line) 0 1px,transparent 1px 50px),
+    repeating-linear-gradient(90deg,var(--line) 0 1px,transparent 1px 10px);
+  background-size:100% 15px,100% 7px;
+  background-repeat:repeat-x;
+  background-position:bottom left;
+  opacity:.9;
+}
+
+/* ---------- HEADER ---------- */
+.hdr{
+  position:sticky;top:env(safe-area-inset-top,0px);z-index:30;
+  background:var(--surface);border-bottom:1px solid var(--line);
+}
+.hdr .wrap{display:flex;align-items:center;gap:18px;min-height:62px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;flex:0 0 auto}
+.brand .mk{
+  width:34px;height:34px;flex:0 0 34px;border-radius:50%;
+  border:1px solid var(--accent);color:var(--accent);
+  display:grid;place-items:center;font-family:var(--f-display);font-size:17px;font-weight:700;
+}
+.brand b{font-family:var(--f-display);font-size:21px;font-weight:700;letter-spacing:.01em;white-space:nowrap}
+.nav{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}
+.nav a{
+  text-decoration:none;color:var(--ink-soft);font-size:14px;font-weight:500;
+  padding:7px 11px;border-radius:7px;
+}
+.nav a:hover{color:var(--ink);background:var(--surface-2)}
+.hdr .btn{flex:0 0 auto}
+@media(max-width:900px){
+  .hdr .wrap{flex-wrap:wrap;padding-block:10px;gap:10px}
+  .nav{width:100%;margin-left:0;order:3;overflow-x:auto;flex-wrap:nowrap;padding-bottom:2px}
+  .nav a{white-space:nowrap}
+  .hdr .btn{margin-left:auto}
+}
+
+/* ---------- NÚT ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  font-family:var(--f-body);font-size:14.5px;font-weight:600;
+  padding:11px 20px;border-radius:999px;border:1px solid transparent;
+  background:var(--accent);color:#fff;text-decoration:none;cursor:pointer;
+  transition:transform .12s ease,filter .12s ease;
+}
+.btn:hover{filter:brightness(1.07);transform:translateY(-1px)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{background:var(--surface-2);filter:none}
+.btn-light{background:transparent;color:var(--hero-fg);border-color:rgba(255,255,255,.35)}
+.btn-light:hover{background:rgba(255,255,255,.1);filter:none}
+.btn-sm{padding:8px 15px;font-size:13.5px}
+
+/* ---------- HERO ---------- */
+.hero{background:var(--hero-bg);color:var(--hero-fg);overflow:hidden}
+.hero .wrap{padding-block:clamp(44px,6.5vw,76px)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,4vw,56px);align-items:center}
+.hero h1{
+  font-family:var(--f-display);font-weight:600;
+  font-size:clamp(38px,6.4vw,66px);letter-spacing:-.015em;
+}
+.hero h1 em{font-style:italic;color:var(--accent)}
+.hero p.sub{color:var(--hero-soft);margin-top:18px;font-size:17px;max-width:48ch}
+.hero-cta{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
+.tape{
+  margin-top:34px;border-top:1px solid rgba(255,255,255,.18);padding-top:14px;
+  position:relative;
+}
+.tape-ticks{
+  height:13px;
+  background-image:
+    repeating-linear-gradient(90deg,rgba(255,255,255,.55) 0 1px,transparent 1px 48px),
+    repeating-linear-gradient(90deg,rgba(255,255,255,.22) 0 1px,transparent 1px 9.6px);
+  background-size:100% 13px,100% 6px;
+  background-repeat:repeat-x;background-position:top left;
+}
+.stats{display:flex;gap:clamp(18px,4vw,44px);flex-wrap:wrap;margin-top:14px}
+.stat b{
+  display:block;font-family:var(--f-display);font-size:clamp(28px,3.4vw,38px);
+  font-weight:700;line-height:1;font-variant-numeric:tabular-nums;
+}
+.stat span{font-size:12.5px;color:var(--hero-soft);letter-spacing:.04em}
+.hero-art{
+  display:grid;grid-template-columns:1fr 1fr;gap:12px;
+}
+.hero-art .swatch{aspect-ratio:3/4;border-radius:var(--r);display:grid;place-items:center;padding:16px}
+.hero-art .swatch:nth-child(1){grid-row:span 2;aspect-ratio:3/5.1}
+.hero-art svg{width:100%;height:100%;color:rgba(255,255,255,.9)}
+@media(max-width:860px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-art{max-width:420px;margin-inline:auto;order:-1}
+  .hero-art .swatch:nth-child(1){grid-row:auto;aspect-ratio:3/4}
+  .hero-art .swatch:nth-child(3){display:none}
+}
+
+/* vải: nền swatch */
+.sw-nam{background:linear-gradient(140deg,#28334C,#1B2437)}
+.sw-nu{background:linear-gradient(140deg,#54252F,#39181F)}
+.sw-dp{background:linear-gradient(140deg,#1F4440,#15302D)}
+.weave{
+  position:relative;
+}
+.weave::after{
+  content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+  background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.055) 0 1px,transparent 1px 5px);
+}
+
+/* ---------- DỊCH VỤ ---------- */
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}
+.svc-card{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+  padding:24px;display:flex;flex-direction:column;gap:10px;min-width:0;
+}
+.svc-card .ic{width:40px;height:48px;color:var(--accent)}
+.svc-card h3{font-family:var(--f-display);font-size:25px;font-weight:600}
+.svc-card p{color:var(--ink-soft);font-size:15px}
+.svc-card ul{margin:4px 0 0;padding-left:18px;color:var(--ink-soft);font-size:14.5px;line-height:1.85}
+@media(max-width:860px){.svc{grid-template-columns:1fr}}
+
+/* ---------- MẪU MAY ---------- */
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-top:26px}
+.chip{
+  font:inherit;font-size:13.5px;font-weight:500;cursor:pointer;
+  padding:8px 16px;border-radius:999px;border:1px solid var(--line);
+  background:var(--surface);color:var(--ink-soft);
+}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.grid-sp{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:24px}
+@media(max-width:1000px){.grid-sp{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.grid-sp{grid-template-columns:1fr}}
+.card{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+  overflow:hidden;display:flex;flex-direction:column;min-width:0;
+}
+.thumb{aspect-ratio:4/5;display:grid;place-items:center;padding:26px;position:relative}
+.thumb svg{width:100%;height:100%;color:rgba(255,255,255,.88)}
+.thumb .tag{
+  position:absolute;top:10px;left:10px;font-size:10.5px;font-weight:600;letter-spacing:.1em;
+  text-transform:uppercase;color:rgba(255,255,255,.9);
+  border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:3px 9px;
+}
+.card-body{padding:16px 16px 18px;display:flex;flex-direction:column;gap:7px;flex:1}
+.card-body h3{font-size:17px;font-weight:600;line-height:1.3}
+.card-body .mo{font-size:13.5px;color:var(--ink-soft);line-height:1.6;flex:1}
+.price{font-size:14px;font-weight:600;font-variant-numeric:tabular-nums}
+.price small{display:block;font-weight:400;color:var(--ink-soft);font-size:12.5px;font-variant-numeric:tabular-nums}
+.meta{font-size:12.5px;color:var(--ink-soft);display:flex;gap:6px;align-items:center}
+.dot{width:4px;height:4px;border-radius:50%;background:var(--accent);flex:0 0 4px}
+
+/* ---------- QUY TRÌNH ---------- */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:38px}
+@media(max-width:980px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}}
+.step{border-top:2px solid var(--accent);padding-top:16px;min-width:0}
+.step .n{
+  font-family:var(--f-display);font-size:15px;font-weight:700;color:var(--accent);
+  letter-spacing:.1em;display:block;margin-bottom:6px;font-variant-numeric:tabular-nums;
+}
+.step h3{font-size:16.5px;font-weight:600;margin-bottom:6px}
+.step p{font-size:14px;color:var(--ink-soft);line-height:1.65}
+
+/* ---------- BẢNG GIÁ ---------- */
+.tbl-wrap{overflow-x:auto;margin-top:30px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:620px}
+th,td{text-align:left;padding:13px 16px;border-bottom:1px solid var(--line);font-size:14.5px}
+thead th{
+  font-size:11.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-soft);
+  font-weight:600;background:var(--surface-2);
+}
+td.num{text-align:right;font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+tbody tr:last-child td{border-bottom:none}
+.note{font-size:13.5px;color:var(--ink-soft);margin-top:14px;max-width:70ch}
+
+/* ---------- FORM ĐẶT MAY ---------- */
+.order{background:var(--surface-2)}
+.form-card{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+  padding:clamp(20px,3vw,34px);margin-top:30px;
+}
+fieldset{border:none;padding:0;margin:0 0 26px}
+fieldset:last-of-type{margin-bottom:18px}
+legend{
+  font-size:11.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accent);padding:0 0 14px;
+}
+.row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.row.two{grid-template-columns:repeat(2,1fr)}
+@media(max-width:760px){.row,.row.two{grid-template-columns:1fr}}
+.fld{display:flex;flex-direction:column;gap:6px;min-width:0}
+.fld label{font-size:13px;font-weight:500;color:var(--ink-soft)}
+.fld label .req{color:#C0392B}
+input,select,textarea{
+  font:inherit;font-size:15px;color:var(--ink);background:var(--paper);
+  border:1px solid var(--line);border-radius:8px;padding:10px 12px;width:100%;
+}
+textarea{resize:vertical;min-height:84px}
+input:disabled{opacity:.45}
+.hint{font-size:12px;color:var(--ink-soft)}
+.check{
+  display:flex;gap:10px;align-items:flex-start;background:var(--accent-soft);
+  border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin-bottom:16px;
+}
+.check input{width:18px;height:18px;flex:0 0 18px;margin-top:2px;accent-color:var(--accent)}
+.check label{font-size:14px;font-weight:500;color:var(--ink);cursor:pointer}
+.check label small{display:block;font-weight:400;color:var(--ink-soft);font-size:12.5px}
+.grid-do{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+@media(max-width:900px){.grid-do{grid-template-columns:repeat(2,1fr)}}
+.size-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+@media(max-width:620px){.size-grid{grid-template-columns:repeat(3,1fr)}}
+.err{
+  color:#C0392B;font-size:13.5px;font-weight:500;margin-bottom:14px;
+  background:rgba(192,57,43,.09);border:1px solid rgba(192,57,43,.3);
+  border-radius:8px;padding:10px 13px;
+}
+.form-foot{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.form-foot .hint{flex:1;min-width:200px}
+
+/* hướng dẫn đo */
+.guide{margin-top:16px;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--paper)}
+.guide summary{
+  cursor:pointer;padding:12px 15px;font-size:14px;font-weight:600;list-style:none;
+  display:flex;align-items:center;gap:8px;
+}
+.guide summary::-webkit-details-marker{display:none}
+.guide summary::before{content:"+";color:var(--accent);font-weight:700;font-size:17px;line-height:1}
+.guide[open] summary::before{content:"−"}
+.guide ul{margin:0;padding:0 18px 16px 36px;color:var(--ink-soft);font-size:14px;line-height:1.8}
+
+/* phiếu đơn */
+.receipt{
+  background:var(--surface);border:1px solid var(--accent);border-radius:var(--r);
+  padding:clamp(20px,3vw,32px);margin-top:30px;
+}
+.receipt .ok-top{display:flex;gap:12px;align-items:center;margin-bottom:6px}
+.receipt .ok-top svg{width:26px;height:26px;color:var(--ok);flex:0 0 26px}
+.receipt h3{font-family:var(--f-display);font-size:28px;font-weight:600}
+.code{
+  display:inline-block;font-family:var(--f-body);font-weight:700;font-size:17px;letter-spacing:.06em;
+  background:var(--accent-soft);color:var(--accent);border-radius:7px;padding:6px 14px;margin:14px 0 18px;
+  font-variant-numeric:tabular-nums;
+}
+.rc-sec{border-top:1px solid var(--line);padding-top:14px;margin-top:14px}
+.rc-sec h4{
+  margin:0 0 10px;font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink-soft);font-weight:600;
+}
+.kv{display:grid;grid-template-columns:repeat(2,1fr);gap:8px 22px}
+@media(max-width:620px){.kv{grid-template-columns:1fr}}
+.kv div{display:flex;justify-content:space-between;gap:12px;font-size:14.5px;border-bottom:1px dotted var(--line);padding-bottom:5px}
+.kv span:first-child{color:var(--ink-soft)}
+.kv span:last-child{font-weight:600;text-align:right;font-variant-numeric:tabular-nums}
+
+/* đơn đã lưu */
+.mine{display:grid;gap:10px;margin-top:22px}
+.mine-item{
+  display:flex;gap:14px;align-items:center;flex-wrap:wrap;
+  background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:12px 16px;font-size:14px;
+}
+.mine-item b{font-variant-numeric:tabular-nums;letter-spacing:.04em}
+.mine-item .s{color:var(--ink-soft);font-size:13px}
+.badge{
+  margin-left:auto;font-size:11.5px;font-weight:600;letter-spacing:.06em;
+  background:var(--accent-soft);color:var(--accent);border-radius:999px;padding:4px 11px;
+}
+
+/* ---------- KHÁCH HÀNG ---------- */
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+@media(max-width:880px){.quotes{grid-template-columns:1fr}}
+.quote{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:24px;min-width:0}
+.quote p{font-family:var(--f-display);font-size:20px;line-height:1.5;font-weight:600}
+.quote footer{margin-top:14px;font-size:13px;color:var(--ink-soft);font-style:normal}
+.stars{color:var(--accent);letter-spacing:.14em;font-size:13px;margin-bottom:10px}
+
+/* ---------- LIÊN HỆ ---------- */
+.contact{background:var(--hero-bg);color:var(--hero-fg)}
+.ct-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(26px,4vw,56px)}
+@media(max-width:860px){.ct-grid{grid-template-columns:1fr}}
+.contact .h-sec{color:var(--hero-fg)}
+.ct-list{display:grid;gap:18px;margin-top:26px}
+.ct-item{display:flex;gap:14px;align-items:flex-start}
+.ct-item svg{width:20px;height:20px;color:var(--accent);flex:0 0 20px;margin-top:3px}
+.ct-item b{display:block;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--hero-soft);font-weight:600;margin-bottom:3px}
+.ct-item span{font-size:16px}
+.phone-box{
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);
+  border-radius:var(--r);padding:22px;
+}
+.phone-box .num{
+  font-family:var(--f-display);font-size:clamp(28px,4vw,38px);font-weight:700;
+  letter-spacing:.02em;font-variant-numeric:tabular-nums;user-select:all;display:block;margin:6px 0 16px;
+}
+.hours{margin-top:18px;border-top:1px solid rgba(255,255,255,.16);padding-top:16px;font-size:14px;color:var(--hero-soft);line-height:1.9}
+.hours b{color:var(--hero-fg);font-weight:600}
+
+/* ---------- FOOTER ---------- */
+.foot{background:var(--surface);border-top:1px solid var(--line)}
+.foot .wrap{padding-block:22px;display:flex;gap:14px;justify-content:space-between;flex-wrap:wrap;align-items:center}
+.foot p{font-size:13px;color:var(--ink-soft)}
+
+.toast{
+  position:fixed;left:50%;transform:translateX(-50%);
+  bottom:calc(22px + env(safe-area-inset-bottom,0px));z-index:60;
+  background:var(--ink);color:var(--paper);border-radius:999px;
+  padding:11px 22px;font-size:14px;font-weight:500;box-shadow:0 8px 28px rgba(0,0,0,.28);
+}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="mk">Đ</span><b>Nhà May Đức Tâm</b></a>
+    <nav class="nav">
+      <a href="#dichvu">Dịch vụ</a>
+      <a href="#mau">Mẫu may</a>
+      <a href="#quytrinh">Quy trình</a>
+      <a href="#banggia">Bảng giá</a>
+      <a href="#lienhe">Liên hệ</a>
+    </nav>
+    <a class="btn btn-sm" href="#datmay">Đặt may</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">May đo thủ công từ 1998</span>
+        <h1>Không có size nào<br>vừa bằng <em>số đo của bạn</em></h1>
+        <p class="sub">Vest, áo dài, đầm dạ hội và đồng phục — cắt may theo 14 số đo riêng, thử đồ hai lần, chỉnh đến khi bạn mặc thấy vừa mới giao.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#datmay">Đặt may ngay</a>
+          <a class="btn btn-light" href="#mau">Xem mẫu may</a>
+        </div>
+        <div class="tape">
+          <div class="tape-ticks"></div>
+          <div class="stats">
+            <div class="stat"><b>27</b><span>NĂM TRONG NGHỀ</span></div>
+            <div class="stat"><b>12.400+</b><span>BỘ ĐÃ HOÀN THÀNH</span></div>
+            <div class="stat"><b>7–14</b><span>NGÀY GIAO ĐỒ</span></div>
+            <div class="stat"><b>2</b><span>LẦN THỬ MIỄN PHÍ</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="swatch weave sw-nam" data-ic="vest"></div>
+        <div class="swatch weave sw-nu" data-ic="aodai"></div>
+        <div class="swatch weave sw-dp" data-ic="polo"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ruler" aria-hidden="true"></div>
+
+<!-- ================= DỊCH VỤ ================= -->
+<section class="band" id="dichvu">
+  <div class="wrap">
+    <span class="eyebrow">Chúng tôi nhận may</span>
+    <h2 class="h-sec">Ba dòng trang phục, một tiêu chuẩn</h2>
+    <p class="lede">Cùng một người thợ cả kiểm form, cùng một quy trình thử đồ hai lần — dù bạn may một bộ vest cưới hay hai trăm bộ đồng phục.</p>
+
+    <div class="svc">
+      <article class="svc-card">
+        <div class="ic" data-ic="vest"></div>
+        <h3>Vest &amp; đồ nam</h3>
+        <p>Vest cưới, vest công sở, sơ mi và quần tây cắt theo dáng người — vai xuôi, bụng đầy hay lưng tôm đều chỉnh được.</p>
+        <ul>
+          <li>Vest 2 mảnh / 3 mảnh</li>
+          <li>Sơ mi, quần tây, gi-lê</li>
+          <li>Áo khoác dạ, măng tô</li>
+        </ul>
+      </article>
+      <article class="svc-card">
+        <div class="ic" data-ic="aodai"></div>
+        <h3>Áo dài &amp; đồ nữ</h3>
+        <p>Áo dài truyền thống lấy đủ 14 số đo, đầm dạ hội dựng phom bằng canh tóc, vest nữ ôm eo mà vẫn thoải mái khi ngồi.</p>
+        <ul>
+          <li>Áo dài truyền thống &amp; cách tân</li>
+          <li>Đầm dạ hội, đầm công sở</li>
+          <li>Vest nữ, chân váy</li>
+        </ul>
+      </article>
+      <article class="svc-card">
+        <div class="ic" data-ic="polo"></div>
+        <h3>Đồng phục số lượng lớn</h3>
+        <p>Nhận từ 20 bộ. May mẫu duyệt trước, in hoặc thêu logo tại xưởng, giao theo đợt để công ty kịp phát cho nhân viên.</p>
+        <ul>
+          <li>Sơ mi công sở, polo</li>
+          <li>Đồng phục nhà hàng – khách sạn</li>
+          <li>Bảo hộ, đồng phục trường học</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="ruler" aria-hidden="true"></div>
+
+<!-- ================= MẪU MAY ================= -->
+<section class="band" id="mau">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">Mẫu may &amp; giá tham khảo</span>
+        <h2 class="h-sec">Chọn mẫu, tiệm may theo số đo của bạn</h2>
+        <p class="lede">Giá dưới đây là tiền công may. Nếu bạn lấy vải của tiệm, xem cột “trọn gói”. Khách mang vải đến thì chỉ trả tiền công.</p>
+      </div>
+    </div>
+
+    <div class="filters" role="group" aria-label="Lọc theo nhóm trang phục">
+      <button class="chip" type="button" data-f="all" aria-pressed="true">Tất cả</button>
+      <button class="chip" type="button" data-f="nam" aria-pressed="false">Nam</button>
+      <button class="chip" type="button" data-f="nu" aria-pressed="false">Nữ</button>
+      <button class="chip" type="button" data-f="dp" aria-pressed="false">Đồng phục</button>
+    </div>
+
+    <div class="grid-sp" id="gridSP"></div>
+  </div>
+</section>
+
+<div class="ruler" aria-hidden="true"></div>
+
+<!-- ================= QUY TRÌNH ================= -->
+<section class="band" id="quytrinh">
+  <div class="wrap">
+    <span class="eyebrow">Từ lúc đặt đến lúc nhận</span>
+    <h2 class="h-sec">Năm bước, không bước nào bỏ qua</h2>
+    <p class="lede">Bạn luôn biết đồ của mình đang ở bước nào. Tiệm gọi báo trước mỗi lần hẹn.</p>
+
+    <div class="steps">
+      <div class="step">
+        <span class="n">BƯỚC 01</span>
+        <h3>Đặt &amp; tư vấn</h3>
+        <p>Gửi đơn trên web hoặc gọi điện. Tiệm gọi lại trong 2 giờ làm việc để chốt kiểu dáng và chất liệu.</p>
+      </div>
+      <div class="step">
+        <span class="n">BƯỚC 02</span>
+        <h3>Lấy số đo</h3>
+        <p>Đến tiệm đo trực tiếp, hoặc tự đo tại nhà theo hướng dẫn rồi gửi số đo qua đơn hàng.</p>
+      </div>
+      <div class="step">
+        <span class="n">BƯỚC 03</span>
+        <h3>Cắt &amp; ráp phom</h3>
+        <p>Thợ cả vẽ rập riêng cho từng người, cắt vải và ráp phom thô để chuẩn bị thử lần một.</p>
+      </div>
+      <div class="step">
+        <span class="n">BƯỚC 04</span>
+        <h3>Thử đồ 2 lần</h3>
+        <p>Thử phom thô rồi thử bản hoàn thiện. Chỉnh vai, eo, lai — miễn phí cho đến khi vừa.</p>
+      </div>
+      <div class="step">
+        <span class="n">BƯỚC 05</span>
+        <h3>Hoàn thiện &amp; giao</h3>
+        <p>Ủi phom, đóng túi, giao tại tiệm hoặc ship tận nơi. Bảo hành sửa form 30 ngày.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ruler" aria-hidden="true"></div>
+
+<!-- ================= BẢNG GIÁ ================= -->
+<section class="band" id="banggia">
+  <div class="wrap">
+    <span class="eyebrow">Bảng giá</span>
+    <h2 class="h-sec">Giá niêm yết, báo đủ trước khi cắt vải</h2>
+    <p class="lede">Tiệm báo giá đầy đủ và thu 50% đặt cọc trước khi cắt vải. Không phát sinh thêm sau khi đã chốt đơn.</p>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Trang phục</th>
+            <th scope="col">Chất liệu phổ biến</th>
+            <th scope="col">Thời gian</th>
+            <th scope="col" style="text-align:right">Công may</th>
+            <th scope="col" style="text-align:right">Trọn gói (gồm vải)</th>
+          </tr>
+        </thead>
+        <tbody id="bangGia"></tbody>
+      </table>
+    </div>
+    <p class="note">Đồng phục nhận từ 20 bộ trở lên, giá tính trên mỗi bộ và giảm thêm theo số lượng. In hoặc thêu logo tính riêng từ 25.000đ/vị trí.</p>
+  </div>
+</section>
+
+<!-- ================= ĐẶT MAY ================= -->
+<section class="band order" id="datmay">
+  <div class="wrap">
+    <span class="eyebrow">Đặt may online</span>
+    <h2 class="h-sec">Gửi số đo, tiệm gọi lại trong 2 giờ</h2>
+    <p class="lede">Chưa biết số đo cũng đặt được — tích vào ô “đến tiệm đo trực tiếp”, tiệm sẽ hẹn lịch giúp bạn.</p>
+
+    <form class="form-card" id="formDat" novalidate>
+      <div class="err" id="loiForm" hidden></div>
+
+      <fieldset>
+        <legend>Bước 1 — Trang phục cần may</legend>
+        <div class="row">
+          <div class="fld">
+            <label for="loai">Loại trang phục <span class="req">*</span></label>
+            <select id="loai" name="loai">
+              <option value="">— Chọn loại —</option>
+              <optgroup label="Nam">
+                <option value="vest-nam">Vest nam</option>
+                <option value="so-mi-nam">Áo sơ mi nam</option>
+                <option value="quan-tay">Quần tây nam</option>
+                <option value="khoac-nam">Áo khoác dạ</option>
+              </optgroup>
+              <optgroup label="Nữ">
+                <option value="ao-dai">Áo dài</option>
+                <option value="dam">Đầm dạ hội / công sở</option>
+                <option value="vest-nu">Vest nữ</option>
+                <option value="chan-vay">Chân váy</option>
+              </optgroup>
+              <optgroup label="Đồng phục">
+                <option value="dong-phuc">Đồng phục số lượng lớn</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="fld">
+            <label for="mau">Mẫu tham khảo</label>
+            <select id="mau" name="mau"><option value="">— Chọn loại trang phục trước —</option></select>
+          </div>
+          <div class="fld">
+            <label for="vai">Vải</label>
+            <select id="vai" name="vai">
+              <option value="Tiệm tư vấn và cung cấp vải">Tiệm tư vấn và cung cấp vải</option>
+              <option value="Khách tự mang vải đến">Khách tự mang vải đến</option>
+              <option value="Chưa quyết định, cần tư vấn thêm">Chưa quyết định, cần tư vấn thêm</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Bước 2 — Số đo</legend>
+
+        <div class="check">
+          <input type="checkbox" id="denTiem" name="denTiem">
+          <label for="denTiem">Tôi chưa biết số đo, muốn đến tiệm đo trực tiếp
+            <small>Tiệm sẽ gọi hẹn lịch. Đo tại tiệm miễn phí, mất khoảng 15 phút.</small>
+          </label>
+        </div>
+
+        <div id="khuSoDo">
+          <div class="grid-do" id="gridDo">
+            <p class="hint" style="grid-column:1/-1">Chọn loại trang phục ở bước 1 để hiện đúng các số đo cần lấy.</p>
+          </div>
+          <details class="guide" id="guideDo" hidden>
+            <summary>Cách tự đo tại nhà cho đúng</summary>
+            <ul>
+              <li>Mặc đồ mỏng sát người, đứng thẳng, thở ra bình thường rồi mới đo.</li>
+              <li>Thước dây đặt sát da nhưng không siết — luồn vừa một ngón tay dưới thước.</li>
+              <li>Vòng ngực đo ngang chỗ đầy nhất; vòng eo đo chỗ nhỏ nhất, thường trên rốn 2cm.</li>
+              <li>Rộng vai đo từ đầu xương vai trái sang đầu xương vai phải, đo ở sau lưng.</li>
+              <li>Dài tay đo từ đầu vai, qua khuỷu tay hơi gập, xuống đến mắt cá tay.</li>
+              <li>Nhờ người khác đo giúp phần lưng và vai — tự đo thường bị lệch 2–3cm.</li>
+              <li>Tất cả ghi bằng <b>xăng-ti-mét (cm)</b>, riêng cân nặng ghi bằng <b>kg</b>.</li>
+            </ul>
+          </details>
+        </div>
+
+        <div id="khuDongPhuc" hidden>
+          <div class="row two" style="margin-bottom:14px">
+            <div class="fld">
+              <label for="congTy">Tên công ty / đơn vị</label>
+              <input type="text" id="congTy" name="congTy" placeholder="VD: Công ty TNHH Minh Long">
+            </div>
+            <div class="fld">
+              <label for="logo">In / thêu logo</label>
+              <select id="logo" name="logo">
+                <option value="Chưa cần logo">Chưa cần logo</option>
+                <option value="Thêu logo">Thêu logo</option>
+                <option value="In logo">In logo</option>
+                <option value="Cả in và thêu">Cả in và thêu</option>
+              </select>
+            </div>
+          </div>
+          <p class="hint" style="margin-bottom:10px">Số lượng theo size (nhận từ 20 bộ):</p>
+          <div class="size-grid">
+            <div class="fld"><label for="sz-S">Size S</label><input type="number" id="sz-S" min="0" step="1" placeholder="0"></div>
+            <div class="fld"><label for="sz-M">Size M</label><input type="number" id="sz-M" min="0" step="1" placeholder="0"></div>
+            <div class="fld"><label for="sz-L">Size L</label><input type="number" id="sz-L" min="0" step="1" placeholder="0"></div>
+            <div class="fld"><label for="sz-XL">Size XL</label><input type="number" id="sz-XL" min="0" step="1" placeholder="0"></div>
+            <div class="fld"><label for="sz-XXL">Size XXL</label><input type="number" id="sz-XXL" min="0" step="1" placeholder="0"></div>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Bước 3 — Thông tin liên hệ</legend>
+        <div class="row">
+          <div class="fld">
+            <label for="hoTen">Họ và tên <span class="req">*</span></label>
+            <input type="text" id="hoTen" name="hoTen" autocomplete="name" placeholder="Nguyễn Văn An">
+          </div>
+          <div class="fld">
+            <label for="sdt">Số điện thoại <span class="req">*</span></label>
+            <input type="tel" id="sdt" name="sdt" inputmode="numeric" autocomplete="tel" placeholder="0912345678">
+            <span class="hint">Tiệm gọi lại số này để chốt đơn.</span>
+          </div>
+          <div class="fld">
+            <label for="ngayHen">Ngày cần lấy đồ</label>
+            <input type="date" id="ngayHen" name="ngayHen">
+          </div>
+        </div>
+        <div class="row two" style="margin-top:14px">
+          <div class="fld">
+            <label for="diaChi">Địa chỉ giao đồ</label>
+            <input type="text" id="diaChi" name="diaChi" autocomplete="street-address" placeholder="Để trống nếu bạn đến tiệm nhận">
+          </div>
+          <div class="fld">
+            <label for="ghiChu">Ghi chú thêm</label>
+            <input type="text" id="ghiChu" name="ghiChu" placeholder="VD: may gấp cho đám cưới ngày 20/12">
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="form-foot">
+        <button class="btn" type="submit">Gửi đơn đặt may</button>
+        <span class="hint">Gửi đơn chưa phải thanh toán. Tiệm gọi xác nhận rồi mới tính tiền cọc.</span>
+      </div>
+    </form>
+
+    <div id="phieu"></div>
+
+    <div id="khuDonCu" hidden>
+      <h3 class="h-sec" style="font-size:26px;margin-top:46px">Đơn bạn đã gửi</h3>
+      <p class="hint" style="margin-top:6px">Lưu sẵn trên máy này để bạn đọc lại mã đơn khi gọi điện cho tiệm.</p>
+      <div class="mine" id="donCu"></div>
+    </div>
+  </div>
+</section>
+
+<div class="ruler" aria-hidden="true"></div>
+
+<!-- ================= KHÁCH HÀNG ================= -->
+<section class="band">
+  <div class="wrap">
+    <span class="eyebrow">Khách đã may tại tiệm</span>
+    <h2 class="h-sec">Người ta quay lại vì bộ thứ hai</h2>
+    <div class="quotes">
+      <article class="quote">
+        <div class="stars" aria-label="5 trên 5 sao">★★★★★</div>
+        <p>“Vai mình bị xuôi nên mua vest sẵn mặc lúc nào cũng dúm. Bộ này anh thợ chỉnh hai lần, mặc lên thẳng hẳn người.”</p>
+        <footer>Anh Trần Quốc Hưng — Vest cưới 3 mảnh</footer>
+      </article>
+      <article class="quote">
+        <div class="stars" aria-label="5 trên 5 sao">★★★★★</div>
+        <p>“Áo dài cưới đặt trước 3 tuần, thử hai lần đều được chỉnh kỹ. Tà rủ đẹp, ngồi xe hoa cả buổi không bị nhăn.”</p>
+        <footer>Chị Lê Phương Thảo — Áo dài truyền thống</footer>
+      </article>
+      <article class="quote">
+        <div class="stars" aria-label="5 trên 5 sao">★★★★★</div>
+        <p>“Công ty đặt 180 bộ sơ mi, giao đúng hẹn chia hai đợt. Size sai một ít thì tiệm đổi lại luôn, không phải nài.”</p>
+        <footer>Chị Phạm Bích Ngọc — Trưởng phòng Hành chính</footer>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LIÊN HỆ ================= -->
+<section class="band contact" id="lienhe">
+  <div class="wrap">
+    <div class="ct-grid">
+      <div>
+        <span class="eyebrow">Ghé tiệm</span>
+        <h2 class="h-sec">Mời bạn đến đo thử, không cần đặt trước</h2>
+        <div class="ct-list">
+          <div class="ct-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            <div><b>Địa chỉ</b><span>128 Nguyễn Trãi, Phường Bến Thành, TP. Hồ Chí Minh</span></div>
+          </div>
+          <div class="ct-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            <div><b>Email</b><span>lienhe@nhamayductam.vn</span></div>
+          </div>
+          <div class="ct-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></svg>
+            <div><b>Giờ mở cửa</b><span>Thứ 2 – Thứ 7: 8:00 – 19:00 · Chủ nhật: 9:00 – 16:00</span></div>
+          </div>
+        </div>
+        <div class="hours">
+          <b>Đặt hàng số lượng lớn?</b><br>
+          Gọi trước để tiệm sắp lịch may mẫu duyệt — thường mất 3 ngày làm việc cho mẫu đầu tiên.
+        </div>
+      </div>
+
+      <div class="phone-box">
+        <b style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--hero-soft)">Gọi hoặc nhắn Zalo</b>
+        <span class="num" id="soDT">0912 345 678</span>
+        <button class="btn btn-light btn-sm" type="button" id="copySDT">Sao chép số</button>
+        <div class="hours">
+          Nhắn Zalo cùng số này cũng được — gửi kèm ảnh mẫu bạn thích, tiệm báo giá trong ngày.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>© 2026 Nhà May Đức Tâm · 128 Nguyễn Trãi, TP.HCM</p>
+    <p>May đo vest · áo dài · đồng phục</p>
+  </div>
+</footer>
+
+</main>
+
+<script>
+/* ============ HÌNH VẼ TRANG PHỤC (SVG nét) ============ */
+var ICONS = {
+  vest:'<path d="M34 16 L14 27 L9 62 L21 67 L21 114 L79 114 L79 67 L91 62 L86 27 L66 16"/><path d="M34 16 L50 58 L66 16"/><path d="M41 19 L50 58"/><path d="M59 19 L50 58"/><path d="M50 58 L45 114"/><path d="M50 58 L55 114"/><circle cx="45" cy="72" r="2.1"/><circle cx="45" cy="86" r="2.1"/>',
+  shirt:'<path d="M35 16 L13 27 L8 58 L22 63 L22 114 L78 114 L78 63 L92 58 L87 27 L65 16"/><path d="M35 16 L50 34 L65 16"/><path d="M35 16 L41 25 L50 34"/><path d="M65 16 L59 25 L50 34"/><path d="M50 34 L50 114"/><circle cx="50" cy="50" r="1.9"/><circle cx="50" cy="66" r="1.9"/><circle cx="50" cy="82" r="1.9"/><circle cx="50" cy="98" r="1.9"/><rect x="29" y="48" width="14" height="14" rx="1.5"/>',
+  polo:'<path d="M35 16 L15 26 L10 50 L26 56 L26 114 L74 114 L74 56 L90 50 L85 26 L65 16"/><path d="M35 16 L50 32 L65 16"/><path d="M50 32 L50 58"/><circle cx="50" cy="40" r="1.9"/><circle cx="50" cy="50" r="1.9"/><rect x="57" y="42" width="13" height="11" rx="1.5"/>',
+  trousers:'<path d="M22 12 L78 12 L82 114 L58 114 L50 50 L42 114 L18 114 Z"/><path d="M22 25 L78 25"/><path d="M34 31 L30 110"/><path d="M66 31 L70 110"/><circle cx="50" cy="18.5" r="1.9"/>',
+  coat:'<path d="M34 16 L12 28 L6 68 L18 72 L18 118 L82 118 L82 72 L94 68 L88 28 L66 16"/><path d="M34 16 L50 44 L66 16"/><path d="M50 44 L50 118"/><circle cx="41" cy="58" r="2.1"/><circle cx="59" cy="58" r="2.1"/><circle cx="41" cy="74" r="2.1"/><circle cx="59" cy="74" r="2.1"/><path d="M19 88 L33 88"/><path d="M67 88 L81 88"/>',
+  aodai:'<path d="M40 15 L40 8 L60 8 L60 15"/><path d="M40 15 L20 25 L13 55 L24 59 L26 118 L47 118 L49 64"/><path d="M60 15 L80 25 L87 55 L76 59 L74 118 L53 118 L51 64"/><path d="M58 10 L79 27"/>',
+  dress:'<path d="M36 18 L26 26 L30 44 L36 49 L20 116 L80 116 L64 49 L70 44 L74 26 L64 18"/><path d="M36 18 Q50 31 64 18"/><path d="M36 49 L64 49"/><path d="M50 49 L50 116"/>',
+  skirt:'<path d="M28 26 L72 26 L84 112 L16 112 Z"/><path d="M28 39 L72 39"/><path d="M50 39 L50 112"/><path d="M39 39 L32 112"/><path d="M61 39 L68 112"/>'
+};
+function svgIcon(key){
+  return '<svg viewBox="0 0 100 126" fill="none" stroke="currentColor" stroke-width="1.7" '+
+         'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+(ICONS[key]||'')+'</svg>';
+}
+Array.prototype.forEach.call(document.querySelectorAll('[data-ic]'), function(el){
+  el.innerHTML = svgIcon(el.getAttribute('data-ic'));
+});
+
+/* ============ DANH SÁCH MẪU MAY ============ */
+/* Muốn thêm/sửa sản phẩm: sửa trong mảng này. */
+var SP = [
+  {id:'vest2',  ten:'Vest nam 2 mảnh',      nhom:'nam', loai:'vest-nam',  ic:'vest',     cong:2500000, tron:4800000, vai:'Len pha, tuýt-xi', ngay:'10–14 ngày', mo:'Áo vest + quần tây, dáng slim hoặc regular, lót toàn thân, 1–2 khuy.'},
+  {id:'vest3',  ten:'Vest nam 3 mảnh',      nhom:'nam', loai:'vest-nam',  ic:'vest',     cong:3200000, tron:6200000, vai:'Len Ý, Cashmere pha', ngay:'12–16 ngày', mo:'Thêm gi-lê cùng vải. Mẫu khách hay chọn cho lễ cưới, lễ ăn hỏi.'},
+  {id:'somi',   ten:'Áo sơ mi nam',         nhom:'nam', loai:'so-mi-nam', ic:'shirt',    cong:450000,  tron:720000,  vai:'Cotton, Oxford, lụa pha', ngay:'5–7 ngày',  mo:'Cổ đức hoặc cổ Ý, có thể thêu tên ở cổ tay áo.'},
+  {id:'quantay',ten:'Quần tây nam',         nhom:'nam', loai:'quan-tay',  ic:'trousers', cong:550000,  tron:980000,  vai:'Tuýt-xi, kaki co giãn', ngay:'5–7 ngày',  mo:'Ống côn hoặc ống đứng, có li hoặc không li tuỳ dáng người.'},
+  {id:'khoac',  ten:'Áo khoác dạ nam',      nhom:'nam', loai:'khoac-nam', ic:'coat',     cong:2800000, tron:5400000, vai:'Dạ lông cừu, dạ ép', ngay:'14–18 ngày', mo:'Dáng dài qua gối, hai hàng khuy, lót chần bông cho mùa lạnh.'},
+
+  {id:'aodai',  ten:'Áo dài truyền thống',  nhom:'nu',  loai:'ao-dai',    ic:'aodai',    cong:900000,  tron:1900000, vai:'Lụa tơ tằm, gấm, nhung', ngay:'7–10 ngày', mo:'Lấy đủ 14 số đo, tà dài chấm mắt cá, cổ cao 3–4cm tuỳ chọn.'},
+  {id:'aodaict',ten:'Áo dài cách tân',      nhom:'nu',  loai:'ao-dai',    ic:'aodai',    cong:850000,  tron:1650000, vai:'Lụa, voan, linen', ngay:'7–10 ngày',  mo:'Tà ngắn ngang gối, mặc với quần ống suông hoặc chân váy.'},
+  {id:'damhoi', ten:'Đầm dạ hội',           nhom:'nu',  loai:'dam',       ic:'dress',    cong:1800000, tron:3900000, vai:'Ren, voan, satin', ngay:'12–16 ngày', mo:'Dựng phom bằng canh tóc, đính kết tay nếu khách yêu cầu.'},
+  {id:'damcs',  ten:'Đầm công sở',          nhom:'nu',  loai:'dam',       ic:'dress',    cong:750000,  tron:1450000, vai:'Tuýt-xi mềm, cotton lụa', ngay:'6–9 ngày',  mo:'Dáng chữ A hoặc ôm, có lớp lót, kín đáo mà vẫn thoải mái.'},
+  {id:'vestnu', ten:'Vest nữ công sở',      nhom:'nu',  loai:'vest-nu',   ic:'vest',     cong:2200000, tron:4200000, vai:'Tuýt-xi, len pha', ngay:'10–14 ngày', mo:'Ôm eo nhưng chừa cử động vai, đi kèm quần tây hoặc chân váy.'},
+  {id:'chanvay',ten:'Chân váy bút chì',     nhom:'nu',  loai:'chan-vay',  ic:'skirt',    cong:400000,  tron:760000,  vai:'Tuýt-xi, kaki co giãn', ngay:'4–6 ngày',  mo:'Dài qua gối, xẻ sau 12cm, khoá giấu bên hông.'},
+
+  {id:'dpsomi', ten:'Đồng phục sơ mi công ty', nhom:'dp', loai:'dong-phuc', ic:'shirt', cong:320000, tron:480000, vai:'Cotton pha, kate', ngay:'15–20 ngày', mo:'Từ 20 bộ. May mẫu duyệt trước, thêu logo ngực trái.'},
+  {id:'dppolo', ten:'Áo polo đồng phục',    nhom:'dp',  loai:'dong-phuc', ic:'polo',     cong:180000,  tron:260000,  vai:'Cá sấu cotton, thun lạnh', ngay:'12–18 ngày', mo:'Từ 30 áo. Phối màu cổ bo theo nhận diện công ty.'},
+  {id:'dpnh',   ten:'Đồng phục nhà hàng',   nhom:'dp',  loai:'dong-phuc', ic:'shirt',    cong:420000,  tron:650000,  vai:'Kate chống nhăn, kaki', ngay:'15–20 ngày', mo:'Từ 20 bộ. Vải dày, chịu giặt công nghiệp, kèm tạp dề.'}
+];
+
+var vnd = new Intl.NumberFormat('vi-VN');
+function tien(n){ return vnd.format(n) + 'đ'; }
+function swClass(nhom){ return nhom === 'nam' ? 'sw-nam' : (nhom === 'nu' ? 'sw-nu' : 'sw-dp'); }
+function tenNhom(nhom){ return nhom === 'nam' ? 'Nam' : (nhom === 'nu' ? 'Nữ' : 'Đồng phục'); }
+
+/* ---- lưới sản phẩm ---- */
+var gridSP = document.getElementById('gridSP');
+function veSanPham(loc){
+  var ds = SP.filter(function(s){ return loc === 'all' || s.nhom === loc; });
+  gridSP.innerHTML = ds.map(function(s){
+    return '<article class="card">' +
+      '<div class="thumb weave ' + swClass(s.nhom) + '">' +
+        '<span class="tag">' + tenNhom(s.nhom) + '</span>' + svgIcon(s.ic) +
+      '</div>' +
+      '<div class="card-body">' +
+        '<h3>' + s.ten + '</h3>' +
+        '<p class="mo">' + s.mo + '</p>' +
+        '<p class="meta"><span class="dot"></span>' + s.vai + '</p>' +
+        '<p class="meta"><span class="dot"></span>Hoàn thành trong ' + s.ngay + '</p>' +
+        '<p class="price">Công may ' + tien(s.cong) +
+          '<small>Trọn gói từ ' + tien(s.tron) + '</small></p>' +
+        '<button class="btn btn-ghost btn-sm" type="button" data-dat="' + s.id + '" style="margin-top:4px">Đặt may mẫu này</button>' +
+      '</div></article>';
+  }).join('');
+}
+veSanPham('all');
+
+Array.prototype.forEach.call(document.querySelectorAll('.chip'), function(btn){
+  btn.addEventListener('click', function(){
+    Array.prototype.forEach.call(document.querySelectorAll('.chip'), function(b){
+      b.setAttribute('aria-pressed', String(b === btn));
+    });
+    veSanPham(btn.getAttribute('data-f'));
+  });
+});
+
+/* ---- bảng giá ---- */
+document.getElementById('bangGia').innerHTML = SP.map(function(s){
+  return '<tr><td>' + s.ten + '</td><td>' + s.vai + '</td><td>' + s.ngay +
+         '</td><td class="num">' + tien(s.cong) + '</td><td class="num">từ ' + tien(s.tron) + '</td></tr>';
+}).join('');
+
+/* ============ FORM ĐẶT MAY ============ */
+/* Các số đo cần lấy cho từng loại trang phục (đơn vị cm, riêng cân nặng kg) */
+var SO_DO = {
+  'vest-nam'  : ['Chiều cao|cm','Cân nặng|kg','Vòng cổ','Vòng ngực','Vòng eo','Vòng mông','Rộng vai','Dài tay','Dài áo','Vòng bắp tay','Dài quần','Vòng ống'],
+  'so-mi-nam' : ['Chiều cao|cm','Cân nặng|kg','Vòng cổ','Vòng ngực','Vòng eo','Rộng vai','Dài tay','Dài áo'],
+  'quan-tay'  : ['Chiều cao|cm','Cân nặng|kg','Vòng eo','Vòng mông','Vòng đùi','Vòng gối','Vòng ống','Dài quần'],
+  'khoac-nam' : ['Chiều cao|cm','Cân nặng|kg','Vòng cổ','Vòng ngực','Vòng eo','Vòng mông','Rộng vai','Dài tay','Dài áo'],
+  'ao-dai'    : ['Chiều cao|cm','Cân nặng|kg','Vòng cổ','Vòng ngực','Chân ngực','Vòng eo','Vòng mông','Rộng vai','Dài tay','Vòng nách','Vòng bắp tay','Hạ eo sau','Dài áo','Dài quần'],
+  'dam'       : ['Chiều cao|cm','Cân nặng|kg','Vòng ngực','Chân ngực','Vòng eo','Vòng mông','Rộng vai','Dài tay','Hạ eo sau','Dài đầm'],
+  'vest-nu'   : ['Chiều cao|cm','Cân nặng|kg','Vòng ngực','Vòng eo','Vòng mông','Rộng vai','Dài tay','Vòng nách','Dài áo'],
+  'chan-vay'  : ['Chiều cao|cm','Cân nặng|kg','Vòng eo','Vòng mông','Hạ mông','Dài váy'],
+  'dong-phuc' : []
+};
+
+var elLoai = document.getElementById('loai');
+var elMau = document.getElementById('mau');
+var elGridDo = document.getElementById('gridDo');
+var elGuide = document.getElementById('guideDo');
+var elKhuSoDo = document.getElementById('khuSoDo');
+var elKhuDP = document.getElementById('khuDongPhuc');
+var elDenTiem = document.getElementById('denTiem');
+var elForm = document.getElementById('formDat');
+var elLoi = document.getElementById('loiForm');
+
+function khongDau(s){
+  return s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').replace(/Đ/g,'D')
+          .replace(/[^a-zA-Z0-9]+/g,'-').toLowerCase();
+}
+
+function veSoDo(){
+  var loai = elLoai.value;
+  var ds = SO_DO[loai] || [];
+
+  if (loai === 'dong-phuc'){
+    elKhuSoDo.hidden = true;
+    elKhuDP.hidden = false;
+    return;
+  }
+  elKhuDP.hidden = true;
+  elKhuSoDo.hidden = false;
+
+  if (!ds.length){
+    elGridDo.innerHTML = '<p class="hint" style="grid-column:1/-1">Chọn loại trang phục ở bước 1 để hiện đúng các số đo cần lấy.</p>';
+    elGuide.hidden = true;
+    return;
+  }
+  elGuide.hidden = false;
+  elGridDo.innerHTML = ds.map(function(item){
+    var p = item.split('|');
+    var ten = p[0], dv = p[1] || 'cm';
+    var id = 'do-' + khongDau(ten);
+    return '<div class="fld"><label for="' + id + '">' + ten + ' (' + dv + ')</label>' +
+           '<input type="number" id="' + id + '" data-do="' + ten + '" data-dv="' + dv + '" ' +
+           'min="1" max="300" step="0.5" inputmode="decimal" placeholder="0"></div>';
+  }).join('');
+  capNhatKhoaSoDo();
+}
+
+function capNhatKhoaSoDo(){
+  var khoa = elDenTiem.checked;
+  Array.prototype.forEach.call(elGridDo.querySelectorAll('input'), function(i){
+    i.disabled = khoa;
+    if (khoa) i.value = '';
+  });
+}
+
+function veMau(){
+  var loai = elLoai.value;
+  var ds = SP.filter(function(s){ return s.loai === loai; });
+  if (!ds.length){
+    elMau.innerHTML = '<option value="">— Chọn loại trang phục trước —</option>';
+    return;
+  }
+  elMau.innerHTML = '<option value="">— Để tiệm tư vấn —</option>' +
+    ds.map(function(s){ return '<option value="' + s.ten + '">' + s.ten + ' — công may ' + tien(s.cong) + '</option>'; }).join('');
+}
+
+elLoai.addEventListener('change', function(){ veMau(); veSoDo(); });
+elDenTiem.addEventListener('change', capNhatKhoaSoDo);
+
+/* nút "Đặt may mẫu này" trên thẻ sản phẩm */
+gridSP.addEventListener('click', function(e){
+  var btn = e.target.closest('[data-dat]');
+  if (!btn) return;
+  var sp = SP.filter(function(s){ return s.id === btn.getAttribute('data-dat'); })[0];
+  if (!sp) return;
+  elLoai.value = sp.loai;
+  veMau(); veSoDo();
+  elMau.value = sp.ten;
+  document.getElementById('datmay').scrollIntoView({behavior:'smooth', block:'start'});
+  setTimeout(function(){ elLoai.focus({preventScroll:true}); }, 420);
+});
+
+/* ---- kiểm tra & gửi đơn ---- */
+function hopLeSDT(s){
+  var t = s.replace(/[\s.\-()]/g,'');
+  if (t.indexOf('+84') === 0) t = '0' + t.slice(3);
+  return /^0[35789]\d{8}$/.test(t) ? t : '';
+}
+
+function maDon(){
+  var d = new Date();
+  var p = function(n){ return String(n).padStart(2,'0'); };
+  var r = String(Math.floor(Math.random()*900) + 100);
+  return 'DT' + String(d.getFullYear()).slice(2) + p(d.getMonth()+1) + p(d.getDate()) + '-' + r;
+}
+
+function docSoDo(){
+  var out = [];
+  Array.prototype.forEach.call(elGridDo.querySelectorAll('input[data-do]'), function(i){
+    if (i.value !== '' && !i.disabled) out.push({ten:i.getAttribute('data-do'), gt:i.value + ' ' + i.getAttribute('data-dv')});
+  });
+  return out;
+}
+function docSize(){
+  var out = [], tong = 0;
+  ['S','M','L','XL','XXL'].forEach(function(s){
+    var v = parseInt(document.getElementById('sz-' + s).value, 10);
+    if (v > 0){ out.push({ten:'Size ' + s, gt:v + ' bộ'}); tong += v; }
+  });
+  return {ds:out, tong:tong};
+}
+
+function baoLoi(msg){
+  elLoi.textContent = msg;
+  elLoi.hidden = false;
+  elLoi.scrollIntoView({behavior:'smooth', block:'center'});
+}
+
+elForm.addEventListener('submit', function(e){
+  e.preventDefault();
+  elLoi.hidden = true;
+
+  var loai = elLoai.value;
+  var hoTen = document.getElementById('hoTen').value.trim();
+  var sdtRaw = document.getElementById('sdt').value.trim();
+
+  if (!loai) return baoLoi('Bạn chưa chọn loại trang phục ở Bước 1.');
+  if (hoTen.length < 2) return baoLoi('Bạn vui lòng điền họ tên để tiệm xưng hô cho đúng.');
+  var sdt = hopLeSDT(sdtRaw);
+  if (!sdt) return baoLoi('Số điện thoại chưa đúng. Nhập 10 số bắt đầu bằng 0, ví dụ 0912345678.');
+
+  var soDo = [], tongBo = 0;
+  if (loai === 'dong-phuc'){
+    var sz = docSize();
+    soDo = sz.ds; tongBo = sz.tong;
+    if (tongBo > 0 && tongBo < 20) return baoLoi('Đồng phục nhận từ 20 bộ trở lên. Bạn đang đặt ' + tongBo + ' bộ.');
+  } else if (!elDenTiem.checked){
+    soDo = docSoDo();
+    if (!soDo.length) return baoLoi('Bạn chưa điền số đo nào. Điền ít nhất chiều cao và cân nặng, hoặc tích ô “đến tiệm đo trực tiếp”.');
+  }
+
+  var tenLoai = elLoai.options[elLoai.selectedIndex].text;
+  var don = {
+    ma: maDon(),
+    luc: new Date().toLocaleString('vi-VN'),
+    loai: tenLoai,
+    mau: elMau.value || 'Để tiệm tư vấn',
+    vai: document.getElementById('vai').value,
+    congTy: document.getElementById('congTy').value.trim(),
+    logo: loai === 'dong-phuc' ? document.getElementById('logo').value : '',
+    denTiem: elDenTiem.checked && loai !== 'dong-phuc',
+    soDo: soDo,
+    hoTen: hoTen,
+    sdt: sdt,
+    diaChi: document.getElementById('diaChi').value.trim(),
+    ngayHen: document.getElementById('ngayHen').value,
+    ghiChu: document.getElementById('ghiChu').value.trim()
+  };
+
+  luuDon(don);
+  veDon(don);
+  veDonCu();
+  elForm.hidden = true;
+  document.getElementById('phieu').scrollIntoView({behavior:'smooth', block:'start'});
+});
+
+/* ---- phiếu xác nhận ---- */
+function hang(k, v){
+  return '<div><span>' + k + '</span><span>' + v + '</span></div>';
+}
+function veDon(d){
+  var ngay = d.ngayHen ? new Date(d.ngayHen + 'T00:00:00').toLocaleDateString('vi-VN') : 'Chưa chọn';
+  var htmlDo = '';
+  if (d.denTiem){
+    htmlDo = '<p class="hint">Bạn chọn đến tiệm đo trực tiếp — tiệm sẽ gọi hẹn lịch đo.</p>';
+  } else if (d.soDo.length){
+    htmlDo = '<div class="kv">' + d.soDo.map(function(s){ return hang(s.ten, s.gt); }).join('') + '</div>';
+  } else {
+    htmlDo = '<p class="hint">Chưa có số đo — tiệm sẽ trao đổi thêm khi gọi lại.</p>';
+  }
+
+  document.getElementById('phieu').innerHTML =
+    '<div class="receipt">' +
+      '<div class="ok-top">' +
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg>' +
+        '<h3>Đã nhận đơn của bạn</h3>' +
+      '</div>' +
+      '<p class="hint">Tiệm sẽ gọi lại số <b>' + d.sdt + '</b> trong 2 giờ làm việc để xác nhận kiểu dáng, chất liệu và báo giá chính xác.</p>' +
+      '<span class="code">Mã đơn ' + d.ma + '</span>' +
+
+      '<div class="rc-sec"><h4>Trang phục</h4><div class="kv">' +
+        hang('Loại', d.loai) + hang('Mẫu', d.mau) + hang('Vải', d.vai) +
+        (d.congTy ? hang('Đơn vị', d.congTy) : '') +
+        (d.logo ? hang('Logo', d.logo) : '') +
+      '</div></div>' +
+
+      '<div class="rc-sec"><h4>' + (d.loai.indexOf('Đồng phục') === 0 ? 'Số lượng theo size' : 'Số đo') + '</h4>' + htmlDo + '</div>' +
+
+      '<div class="rc-sec"><h4>Người đặt</h4><div class="kv">' +
+        hang('Họ tên', d.hoTen) + hang('Điện thoại', d.sdt) +
+        hang('Ngày cần lấy', ngay) +
+        (d.diaChi ? hang('Giao đến', d.diaChi) : hang('Nhận đồ', 'Tại tiệm')) +
+        (d.ghiChu ? hang('Ghi chú', d.ghiChu) : '') +
+      '</div></div>' +
+
+      '<div class="form-foot" style="margin-top:24px">' +
+        '<button class="btn" type="button" id="copyDon">Sao chép đơn để gửi Zalo</button>' +
+        '<button class="btn btn-ghost" type="button" id="donMoi">Đặt thêm đơn khác</button>' +
+        '<span class="hint">Giữ lại mã đơn để đọc cho tiệm khi gọi điện.</span>' +
+      '</div>' +
+    '</div>';
+
+  document.getElementById('copyDon').addEventListener('click', function(){ chep(vanBanDon(d)); });
+  document.getElementById('donMoi').addEventListener('click', function(){
+    document.getElementById('phieu').innerHTML = '';
+    elForm.reset();
+    elForm.hidden = false;
+    veMau(); veSoDo();
+    elForm.scrollIntoView({behavior:'smooth', block:'start'});
+  });
+}
+
+function vanBanDon(d){
+  var t = 'ĐƠN ĐẶT MAY — NHÀ MAY ĐỨC TÂM\n';
+  t += 'Mã đơn: ' + d.ma + '\nNgày gửi: ' + d.luc + '\n\n';
+  t += 'Trang phục: ' + d.loai + '\nMẫu: ' + d.mau + '\nVải: ' + d.vai + '\n';
+  if (d.congTy) t += 'Đơn vị: ' + d.congTy + '\n';
+  if (d.logo) t += 'Logo: ' + d.logo + '\n';
+  t += '\n';
+  if (d.denTiem){
+    t += 'Số đo: khách đến tiệm đo trực tiếp\n';
+  } else if (d.soDo.length){
+    t += 'SỐ ĐO:\n' + d.soDo.map(function(s){ return '- ' + s.ten + ': ' + s.gt; }).join('\n') + '\n';
+  }
+  t += '\nKhách: ' + d.hoTen + '\nĐiện thoại: ' + d.sdt + '\n';
+  if (d.ngayHen) t += 'Ngày cần lấy: ' + new Date(d.ngayHen + 'T00:00:00').toLocaleDateString('vi-VN') + '\n';
+  t += 'Nhận đồ: ' + (d.diaChi || 'Tại tiệm') + '\n';
+  if (d.ghiChu) t += 'Ghi chú: ' + d.ghiChu + '\n';
+  return t;
+}
+
+/* ---- lưu đơn trên máy khách ---- */
+var KEY = 'ndt_don_hang';
+function docDon(){
+  try { return JSON.parse(localStorage.getItem(KEY) || '[]'); } catch(e){ return []; }
+}
+function luuDon(d){
+  try {
+    var ds = docDon(); ds.unshift(d);
+    localStorage.setItem(KEY, JSON.stringify(ds.slice(0,20)));
+  } catch(e){ /* trình duyệt chặn lưu — bỏ qua, đơn vẫn hiện trên màn hình */ }
+}
+function veDonCu(){
+  var ds = docDon();
+  var khu = document.getElementById('khuDonCu');
+  if (!ds.length){ khu.hidden = true; return; }
+  khu.hidden = false;
+  document.getElementById('donCu').innerHTML = ds.map(function(d){
+    return '<div class="mine-item"><b>' + d.ma + '</b>' +
+           '<span>' + d.loai + ' · ' + d.mau + '</span>' +
+           '<span class="s">' + d.luc + '</span>' +
+           '<span class="badge">Chờ tiệm gọi</span></div>';
+  }).join('');
+}
+veDonCu();
+
+/* ---- sao chép ---- */
+var toast;
+function baoThanh(msg){
+  if (toast) toast.remove();
+  toast = document.createElement('div');
+  toast.className = 'toast';
+  toast.setAttribute('role','status');
+  toast.textContent = msg;
+  document.body.appendChild(toast);
+  setTimeout(function(){ if (toast){ toast.remove(); toast = null; } }, 2600);
+}
+function chep(text){
+  if (navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).then(
+      function(){ baoThanh('Đã sao chép — dán vào Zalo để gửi cho tiệm'); },
+      function(){ baoThanh('Trình duyệt không cho sao chép. Bạn bôi đen rồi copy giúp nhé.'); }
+    );
+  } else {
+    baoThanh('Trình duyệt không cho sao chép. Bạn bôi đen rồi copy giúp nhé.');
+  }
+}
+document.getElementById('copySDT').addEventListener('click', function(){
+  chep(document.getElementById('soDT').textContent.trim());
+});
+
+/* ---- cuộn mượt khi bấm menu ---- */
+document.addEventListener('click', function(e){
+  var a = e.target.closest('a[href^="#"]');
+  if (!a) return;
+  var id = a.getAttribute('href').slice(1);
+  var el = id ? document.getElementById(id) : null;
+  if (!el) return;
+  e.preventDefault();
+  el.scrollIntoView({behavior:'smooth', block:'start'});
+});
+
+/* ---- ngày hẹn: không cho chọn ngày quá khứ ---- */
+(function(){
+  var d = new Date(); d.setDate(d.getDate() + 5);
+  document.getElementById('ngayHen').min = d.toISOString().slice(0,10);
+})();
+</script>
+</body>
+</html>
