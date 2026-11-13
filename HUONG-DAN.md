@@ -1,4 +1,4 @@
-# Hướng dẫn dùng website Nhà May Đức Tâm
+# Hướng dẫn dùng website Nhà May Goose D
 
 Dành cho người mới hoàn toàn. Bạn không cần cài gì cả.
 
@@ -25,13 +25,13 @@ Trong Notepad/VS Code nhấn `Ctrl+F` để **tìm**, rồi thay bằng thông t
 
 | Tìm chữ này | Nó là gì | Xuất hiện |
 |---|---|---|
-| `Nhà May Đức Tâm` | Tên tiệm | nhiều chỗ — dùng *Replace All* |
-| `0912 345 678` | Số điện thoại hiện to ở phần Liên hệ | 1 chỗ |
+| `Nhà May Goose D` | Tên tiệm | nhiều chỗ — dùng *Replace All* |
+| `0000 1234 8686` | Hotline hiện to ở phần Liên hệ | 1 chỗ |
 | `128 Nguyễn Trãi, Phường Bến Thành, TP. Hồ Chí Minh` | Địa chỉ tiệm | 1 chỗ |
-| `lienhe@nhamayductam.vn` | Email | 1 chỗ |
+| `lienhe@nhamaygoosed.vn` | Email | 1 chỗ |
 | `Thứ 2 – Thứ 7: 8:00 – 19:00` | Giờ mở cửa | 1 chỗ |
 | `May đo thủ công từ 1998` | Dòng chữ nhỏ trên đầu trang | 1 chỗ |
-| `<span class="mk">Đ</span>` | Chữ cái trong vòng tròn ở logo | 1 chỗ |
+| `<span class="mk">G</span>` | Chữ cái trong vòng tròn ở logo | 1 chỗ |
 
 **Các con số ở trang đầu** (27 năm, 12.400 bộ...) tìm chữ `NĂM TRONG NGHỀ` là thấy,
 sửa con số ngay phía trên nó.
