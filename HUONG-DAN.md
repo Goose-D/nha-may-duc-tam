@@ -93,21 +93,39 @@ theo cài đặt máy người xem). Nếu đổi màu chính, nên đổi cả 
 
 ---
 
-## 6. Đưa website lên mạng (miễn phí)
+## 6. Website đã lên mạng — địa chỉ của bạn
 
-Cách dễ nhất, không cần biết kỹ thuật:
+> ## https://goose-d.github.io/nha-may-duc-tam/
 
-1. Vào **https://app.netlify.com/drop**
-2. Kéo nguyên thư mục `website-may-do` thả vào khung giữa trang
-3. Đợi khoảng 20 giây → Netlify cho bạn một địa chỉ dạng
-   `ten-ngau-nhien.netlify.app` — gửi link đó cho khách là xem được
-4. Tạo tài khoản (miễn phí) để đổi tên địa chỉ cho đẹp, ví dụ `nhamayductam.netlify.app`
+Ai bấm vào link này cũng xem được: điện thoại, máy tính, không cần tài khoản.
+Bạn gửi link qua Zalo, Facebook, in lên danh thiếp đều được.
 
-Muốn tên miền riêng kiểu `nhamayductam.vn` thì mua tại các nhà cung cấp Việt Nam
-(Mắt Bão, PA Vietnam, Tenten...), giá khoảng 700.000đ/năm cho đuôi `.vn`,
-rồi trỏ về Netlify theo hướng dẫn của họ.
+Website đang chạy trên **GitHub Pages** — miễn phí vĩnh viễn, không giới hạn
+lượt xem, không có quảng cáo. Kho chứa file nằm tại
+https://github.com/Goose-D/nha-may-duc-tam
 
-Sau này sửa file `index.html` xong, kéo thả lại thư mục lần nữa là web trên mạng cập nhật.
+### Cập nhật web sau khi sửa file
+
+Sửa xong `index.html` trên máy, mở **PowerShell** tại thư mục này rồi chạy 3 lệnh:
+
+```powershell
+git add .
+git commit -m "Cap nhat noi dung"
+git push
+```
+
+Đợi khoảng 1 phút là địa chỉ trên tự cập nhật theo. (Hoặc nhắn mình, mình chạy giúp.)
+
+### Muốn tên miền riêng kiểu `nhamayductam.vn`?
+
+1. Mua tên miền tại Mắt Bão, PA Vietnam hoặc Tenten — khoảng 700.000đ/năm cho đuôi `.vn`,
+   hoặc ~300.000đ/năm cho đuôi `.com`
+2. Trong trang quản lý tên miền, thêm 4 bản ghi `A` trỏ về:
+   `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+3. Vào https://github.com/Goose-D/nha-may-duc-tam/settings/pages →
+   mục **Custom domain** → gõ tên miền của bạn → Save
+
+Bước này hơi rối, cứ nhắn mình làm giúp khi bạn mua xong tên miền.
 
 ---
 
